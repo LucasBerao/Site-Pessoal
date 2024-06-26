@@ -58,4 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Lógica para lidar com erros, se necessário
       });
   });
+  fetch('http://localhost:3000/contatos')
+  .then(response => response.json())
+  .then(data => {
+    // Manipule os dados recebidos aqui
+  })
+  .catch(error => {
+    console.error('Erro ao buscar dados:', error);
+  });
+
   

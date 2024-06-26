@@ -1,8 +1,133 @@
-.imagem-exemplo {
-    display: block;
-    margin: 15px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    width: 80%;
-    min-width: 400px;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    background-color: rgb(164, 149, 149);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-section img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-buttons a:hover {
+    background-color: #555;
+}
+
+.repo-section {
+    margin: 20px;
+}
+
+.repo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.repo-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.repo-info {
+    display: flex;
+}
+
+.carousel-section {
+    margin: 20px;
+}
+
+.sugestoes-slide {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.colleagues-section {
+    margin: 20px;
+}
+
+.colleagues {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.colleagues img {
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.colleague-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.colleague {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+     background-color: rgb(164, 149, 149);
+     color: #fff;
+     padding: 10px;
+    width: 100%;
+
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+}
+
+
+ 

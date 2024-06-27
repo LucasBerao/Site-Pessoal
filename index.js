@@ -26,3 +26,43 @@ server.use(router)
 server.listen(3000, () => {
   console.log('JSON Server está em execução!')
 })
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('http://localhost:3000/images')
+      .then(response => response.json())
+      .then(images => {
+        // Carregar imagem de perfil
+        const profileImg = images.find(img => img.alt === "Foto de Perfil");
+        document.getElementById('profile-img').src = profileImg.src;
+  
+        // Carregar ícones de contato
+        const instagramImg = images.find(img => img.alt === "Instagram");
+        document.getElementById('instagram-img').src = instagramImg.src;
+  
+        const githubImg = images.find(img => img.alt === "GitHub");
+        document.getElementById('github-img').src = githubImg.src;
+  
+        const gmailImg = images.find(img => img.alt === "Gmail");
+        document.getElementById('gmail-img').src = gmailImg.src;
+  
+        // Carregar repositórios
+        const repoCardsContainer = document.getElementById('repo-cards');
+        const repoImages = images.filter(img => img.alt.startsWith("Imagem de Banner"));
+        repoImages.forEach(img => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${img.src}" class="card-img-top" alt="${img.alt}">
+            <div class="card-body">
+              <a href="repo.html" class="card-title">Scratch</a>
+              <p class="card-text">Labirinto</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Atualizado há 3 minutos</small>
+            </div>
+          `;
+          repoCardsContainer.appendChild(card);
+        });
+      })
+      .catch(error => console.error('Erro ao buscar imagens:', error));
+  });
+  

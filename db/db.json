@@ -6,9 +6,10 @@
       "local": "Belo Horizonte, Minas Gerais",
       "contato": {
         "instagram": "https://www.instagram.com/lucas_berao/",
-        "github": "https://github.com/projects",
+        "github": "https://github.com/LucasBerao",
         "email": "mailto:lavesberao@gmail.com.br"
-      }
+      },
+      "imagem": "assets/images/FOTO.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
         "instagram": "https://www.instagram.com/davi_lanna/",
         "github": "https://github.com/davi_lanna",
         "email": "mailto:davi_lanna@gmail.com"
-      }
+      },
+      "imagem": "assets/images/Davi.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
         "instagram": "https://www.instagram.com/leticia_paulinelli/",
         "github": "https://github.com/leticia_paulinelli",
         "email": "mailto:leticia_paulinelli@gmail.com"
-      }
+      },
+      "imagem": "assets/images/Leticia.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
         "instagram": "https://www.instagram.com/julia_cronenberger/",
         "github": "https://github.com/julia_cronenberger",
         "email": "mailto:julia_cronenberger@gmail.com"
-      }
+      },
+      "imagem": "assets/images/Julia.jpg"
     }
   ],
   "repositorios": [
@@ -47,21 +51,25 @@
       "nome": "Labirinto",
       "descricao": "Projeto em Scratch de um jogo de labirinto.",
       "atualizado": "2024-06-26T10:00:00Z",
-      "url": "repo.html"
+      "url": "repo.html",
+      "imagem": "assets/images/banner.webp"
     },
     {
       "id": 2,
       "nome": "Animação Piada",
       "descricao": "Projeto em Scratch de uma animação humorística.",
       "atualizado": "2024-06-26T10:05:00Z",
-      "url": "repo2.html"
+      "url": "repo2.html",
+      "imagem": "assets/images/Scratch-logo.png"
     },
     {
       "id": 3,
       "nome": "Jogo do Aviãozinho",
       "descricao": "Projeto em Scratch de um jogo de avião.",
       "atualizado": "2024-06-26T10:10:00Z",
-      "url": "repo3.html"
+      "url": "repo3.html",
+      "imagem": "assets/images/Scratch-cat.png"
     }
   ]
 }
+
